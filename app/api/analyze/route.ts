@@ -1,6 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk'
 import { NextRequest, NextResponse } from 'next/server'
-import { getSaju } from '@fullstackfamily/manseryeok'
+const { getSaju } = require('@fullstackfamily/manseryeok')
 
 const client = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
